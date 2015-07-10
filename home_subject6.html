@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TimeTable Page</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="mystyle/common.css"/>
+	<link rel="stylesheet" type="text/css" href="mystyle/timetable_style_2.css"/>
+	<link rel="stylesheet" type="text/css" href="mystyle/subject_list_style.css"/>
+	<link rel="stylesheet" type="text/css" href="mystyle/table_style.css"/>
+</head>
+<body>
+	<div class="container timetable-container">
+		<!--nav part-categories-->
+		<div class="nav" id="category-container">	
+			<div class="header nav-header"><h2>Categories</h2></div>
+			<div class="nav-content">
+				<ul class="thumbnail-list" id="category-list">
+					<li onclick="showSubjects('mathematics')">
+						<img src="resources/img/math_icon.png">
+						<h3>Mathematics</h3>
+					</li>
+					<li onclick="showSubjects('it')">
+						<img src="resources/img/it_icon.png">
+						<h3>IT</h3>
+					</li>
+					<li onclick="showSubjects('languages')">
+						<img src="resources/img/language_icon.png">
+						<h3>Languages</h3>
+					</li>
+					<li>
+						<img src="resources/img/literature_icon.jpg">
+						<h3>Literature</h3>
+					</li>
+					<li>
+						<img src="resources/coffee.jpg">
+						<h3>Physics</h3>
+					</li>
+					<li>
+						<img src="resources/coffee.jpg">
+						<h3>Politics</h3>
+					</li>
+					<li>
+						<img src="resources/coffee.jpg">
+						<h3>Biology</h3>
+					</li>
+					<li>
+						<img src="resources/coffee.jpg">
+						<h3>Geography</h3>
+					</li>
+					<li>
+						<img src="resources/coffee.jpg">
+						<h3>Geography</h3>
+					</li>
+					<li>
+						<img src="resources/coffee.jpg">
+						<h3>Chemistry</h3>
+					</li>
+					<li>
+						<img src="resources/coffee.jpg">
+						<h3>Vovinam</h3>
+					</li>
+					<li>
+						<img src="resources/coffee.jpg">
+						<h3>Aikido</h3>
+					</li>
+					<li>
+						<img src="resources/coffee.jpg">
+						<h3>Karatedo</h3>
+				</ul>
+			</div>
+		</div>
+
+		<!--nav part-subjects-->
+		<div class="nav absolute-position" id="subject-container">   
+			<div class="header nav-header" id="subject-container-header">
+				<button class="button" id="back-button" onclick="backToCategories()">Back</button>	
+				<h2>Subject</h2>
+			</div>
+
+			<div class="nav-content category" id="all-subjects">
+				<ul class="thumbnail-list">
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Algebra 1</h3>
+						<p>This subject is difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Algebra 2</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Discrete 1</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Discrete 2</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Calculus 1</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Calculus 2</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Geometry</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Combinatorics</h3>
+						<p>This subject is the most difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Statistics</h3>
+						<p>Ok, this subject is not difficult.</p>
+					</li>	
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>C Programming</h3>
+						<p>This subject is difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>OOP with C++</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Core Java</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>C#</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Advanced Java</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>HTML & CSS</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>HTML5 & CSS3</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Javascript</h3>
+						<p>This subject is the most difficult.</p>
+					</li>
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>JQuery</h3>
+						<p>This subject is the most difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>AngularJS</h3>
+						<p>Ok, this subject is not difficult.</p>
+					</li>	
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>English</h3>
+						<p>This subject is difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>German</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Japanese</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Vietnamese</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>French</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Latin</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Spanish</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Chinese</h3>
+						<p>This subject is the most difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Russian</h3>
+						<p>Ok, this subject is not difficult.</p>
+					</li>					
+				</ul>
+			</div>
+
+			<div class="nav-content category" id="mathematics">
+				<ul class="thumbnail-list">
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Algebra 1</h3>
+						<p>This subject is difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Algebra 2</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Discrete 1</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Discrete 2</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Calculus 1</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Calculus 2</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Geometry</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Combinatorics</h3>
+						<p>This subject is the most difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Statistics</h3>
+						<p>Ok, this subject is not difficult.</p>
+					</li>			
+				</ul>
+			</div>
+
+			<div class="nav-content category" id="it">
+				<ul class="thumbnail-list">
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>C Programming</h3>
+						<p>This subject is difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>OOP with C++</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Core Java</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>C#</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Advanced Java</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>HTML & CSS</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>HTML5 & CSS3</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Javascript</h3>
+						<p>This subject is the most difficult.</p>
+					</li>
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>JQuery</h3>
+						<p>This subject is the most difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>AngularJS</h3>
+						<p>Ok, this subject is not difficult.</p>
+					</li>	
+				</ul>
+			</div>
+			<div class="nav-content category" id="languages">
+				<ul class="thumbnail-list">
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>English</h3>
+						<p>This subject is difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>German</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Japanese</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Vietnamese</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>French</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Latin</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Spanish</h3>
+						<p>This subject is also difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Chinese</h3>
+						<p>This subject is the most difficult.</p>
+					</li>			
+					<li class="drag-element">
+						<img src="resources/coffee.jpg">
+						<h3>Russian</h3>
+						<p>Ok, this subject is not difficult.</p>
+					</li>			
+				</ul>
+			</div> 
+		</div>
+
+		<!--nav part-search-->
+		<div class="nav absolute-position" id="search-container">
+			<div class="header nav-header">
+				<h2><input id="search-box" type="text" placeholder="Type subject name to search" onkeyup="searchSubject(this.value)"/></h2>
+			</div>
+		</div>
+
+		<!--nav part-setting-->
+		<div class="nav absolute-position" id="setting-container">
+			<div class="header nav-header">
+				<h2>Setting</h2>
+			</div>
+			<div class="setting-content">
+				<button class="button setting-button" onclick="clearTable()">Clear Timetable</button>
+				<button class="button setting-button" onclick="logOut()">Logout</button>
+			</div>
+		</div>
+
+		<!-- section part-->
+		<div class="section">
+			<div class="header section-header"><h2>Timetable</h2></div>
+			<div class="section-content">
+				<table class="table">
+					<tr>
+						<th></th>
+						<th class="day-column">Monday</th>
+						<th class="day-column">Tuesday</th>
+						<th class="day-column">Wednesday</th>
+						<th class="day-column">Thursday</th>
+						<th class="day-column">Friday</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+						<td class="drag-position"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="toolbar nav-toolbar">
+			<button class="button nav-toolbar-button" onclick="showSubjects('all-subjects')">Subject</button>
+			<button class="button nav-toolbar-button" id="search-button" onclick="showSearchPanel()" disabled="true">Search</button>
+			<button class="button nav-toolbar-button" onclick="showSettingPanel()">Setting</button>
+		</div>
+		<div class="toolbar section-toolbar">
+			<button class="button" onclick="saveTable()" style="margin-right: 50px;">Save Timetable</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/button_navigation.js"></script>
+	<script type="text/javascript" src="javascript/drag_and_drop2.js"></script>
+	<script type="text/javascript" src="javascript/cookies_management.js"></script>
+</body>
+</html>

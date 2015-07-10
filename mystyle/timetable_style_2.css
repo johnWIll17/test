@@ -1,0 +1,119 @@
+.timetable-container	{
+	width: 85%;
+	margin: 0 auto;
+	position: relative;
+	min-height: 628px;
+	height: auto;
+}
+
+.nav, .nav-toolbar	{
+	width: 25%;
+}
+
+.section, .section-toolbar	{
+	width: 75%;
+}
+
+.nav, .nav-toolbar, .section, .section-toolbar	{
+	float: left;
+}
+
+.nav	{
+	background-color: #f5f5f5;
+}
+
+.nav-header	> h2, .section-header > h2	{
+	margin: 0;
+	padding: 20px 0;
+}
+
+.nav-content, .section-content, .setting-content	{
+	height: 500px;
+}
+
+.nav-content	{
+	overflow: scroll;
+}
+
+.category	{
+	display: none;
+}
+
+.button	{
+	text-transform: none;
+	border: 1px solid #e5e5e5;
+	background: -moz-linear-gradient(bottom, #c0c0c0, #f5f5f5);
+	background: -o-linear-gradient(bottom, #c0c0c0, #f5f5f5);
+	background: -webkit-linear-gradient(bottom, #c0c0c0, #f5f5f5);
+	background: linear-gradient(bottom, #c0c0c0, #f5f5f5);
+}
+
+.button:hover	{
+	background: -moz-linear-gradient(bottom, #e3e3e3, #c0c0c0);
+	background: -o-linear-gradient(bottom, #e3e3e3, #c0c0c0);
+	background: -webkit-linear-gradient(bottom, #e3e3e3, #c0c0c0);
+	background: linear-gradient(bottom, #e3e3e3, #c0c0c0);
+}
+
+.button[disabled]:hover	{
+	background: -moz-linear-gradient(bottom, #c0c0c0, #f5f5f5);
+	background: -o-linear-gradient(bottom, #c0c0c0, #f5f5f5);
+	background: -webkit-linear-gradient(bottom, #c0c0c0, #f5f5f5);
+	background: linear-gradient(bottom, #c0c0c0, #f5f5f5);
+}
+
+.button[disabled]:active	{
+	padding: 4px;
+}
+
+.nav-toolbar-button:active	{
+	padding-right: 3px;
+}
+
+
+#back-button	{
+	float: left; 
+	margin: 20px 0 0 5px;
+	width: 60px;
+}
+
+#category-list > li {
+	cursor: pointer;
+}
+
+#search-box	{
+	padding: 4px 5px; 
+	width: 90%;
+	border-radius: 5px;
+	border: none;
+}
+
+.setting-content	{
+	background-color: #f5f5f5;
+	text-align: center;
+}
+
+.setting-button	{
+	width: 80%;
+	margin-top: 30px;
+	border: 1px solid #c0c0c0;
+}
+
+.absolute-position	{
+	position: absolute;
+	visibility: hidden;
+}
+
+.section  {
+	background-color: #f5f5dc;
+}
+
+.toolbar{
+	padding: 15px 0;
+	text-transform: none;
+}
+
+.section-toolbar	{
+	text-align: right;
+}
+

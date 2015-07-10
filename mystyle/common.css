@@ -1,0 +1,34 @@
+body	{
+	background: -moz-linear-gradient(top, #eeeeee, #cccccc);
+	background: -o-linear-gradient(top, #eeeeee, #cccccc);
+	background: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+	background: linear-gradient(top, #eeeeee, #cccccc);
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container	{
+	-moz-box-shadow: 10px 10px 5px #888888;
+	-webkit-box-shadow: 10px 10px 5px #888888;
+	-o-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.button	{
+	border-radius: 15px;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.button:active	{
+	padding-left: 5px;
+}
+
+.header, .toolbar	{
+	background-color: #0066cc;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
